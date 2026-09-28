@@ -1,0 +1,1164 @@
+[run_dataset_all_eq] dataset=wt
+[run_dataset_all_eq] eqs=[3, 5, 7, 9]
+[run_dataset_all_eq] pipeline_script=E:\zyc\project\src\21_run_queryset_pipeline_socket.py
+[run_dataset_all_eq] time=2026-07-17 22:09:44
+
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\21_run_queryset_pipeline_socket.py --root E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf --global_data_share_dir E:\zyc\project\out_wt\data_shares --dataset_id wt --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --epoch 2026-01-26 --start 1 --end 15 --timeout 0 --use_vertex_id_as_sid --vertex_id_base 1
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0001
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0002
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0003
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0004
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0005
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0006
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0007
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0008
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0009
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0010
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0011
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0012
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0013
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0014
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\q0015
+
+Saved summary: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq3\_summary.json
+Counts: {'ok': 15, 'fail': 0, 'global_data_share_dir': 'E:\\zyc\\project\\out_wt\\data_shares', 'total': 15}
+
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\21_run_queryset_pipeline_socket.py --root E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf --global_data_share_dir E:\zyc\project\out_wt\data_shares --dataset_id wt --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --epoch 2026-01-26 --start 1 --end 15 --timeout 0 --use_vertex_id_as_sid --vertex_id_base 1
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0001
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0002
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0003
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0004
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0005
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0006
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0007
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0008
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0009
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0010
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0011
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0012
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0013
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0014
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\q0015
+
+Saved summary: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq5\_summary.json
+Counts: {'ok': 15, 'fail': 0, 'global_data_share_dir': 'E:\\zyc\\project\\out_wt\\data_shares', 'total': 15}
+
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\21_run_queryset_pipeline_socket.py --root E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf --global_data_share_dir E:\zyc\project\out_wt\data_shares --dataset_id wt --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --epoch 2026-01-26 --start 1 --end 15 --timeout 0 --use_vertex_id_as_sid --vertex_id_base 1
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0001
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0002
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0003
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0004
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0005
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0006
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0007
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0008
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0009
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0010
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0011
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0012
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0013
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0014
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\q0015
+
+Saved summary: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq7\_summary.json
+Counts: {'ok': 15, 'fail': 0, 'global_data_share_dir': 'E:\\zyc\\project\\out_wt\\data_shares', 'total': 15}
+
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\21_run_queryset_pipeline_socket.py --root E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf --global_data_share_dir E:\zyc\project\out_wt\data_shares --dataset_id wt --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --epoch 2026-01-26 --start 1 --end 15 --timeout 0 --use_vertex_id_as_sid --vertex_id_base 1
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0001
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0002
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0003
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0004
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0005
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0006
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0007
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0008
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0009
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0010
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0011
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0012
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0013
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0014
+
+================================================================================
+RUN: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+================================================================================
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\06_make_dense_shares.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015 --bpath E:\zyc\project\out_wt\wt_incidence_VxE.npz --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step12_onlycloud.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step12_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --chunk 10000
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_make_alpha.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudA_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\cloudB_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_decrypt_step3_dense.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015 --global_data_share_dir E:\zyc\project\out_wt\data_shares --save_full
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_16_make_padded_pairs.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_17_make_query_prf_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015 --data_dir E:\zyc\project\data\wt --node_labels_file node-labels-walmart-trips.txt --dataset_id wt --epoch 2026-01-26 --use_vertex_id_as_sid --vertex_id_base 1
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_18_share_query_tokens.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_19_make_step4_preproc.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\run_step4_socket_pair.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015 --owner_prf_dir E:\zyc\project\out_wt\wt_owner\prf
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\client_step4_prf_filter.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+$ D:\gh\ananconda\envs\hypergraph\python.exe E:\zyc\project\src\23_collect_query_comm_metrics.py --qdir E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\q0015
+
+Saved summary: E:\zyc\project\out_wt\queries\pilot_protocol_wt_eq9\_summary.json
+Counts: {'ok': 15, 'fail': 0, 'global_data_share_dir': 'E:\\zyc\\project\\out_wt\\data_shares', 'total': 15}
