@@ -29,20 +29,13 @@ Large generated files, including dense secret shares, Beaver preprocessing mater
 | Data structure sharing | `src/owner_03_make_data_structure_shares.py` |
 | Data-token generation and sharing | `src/owner_01_make_data_prf_tokens.py`, `src/owner_02_share_data_tokens.py` |
 | Query incidence sharing | `src/06_make_dense_shares.py` |
-| Secure hyperedge-size and pairwise-intersection pruning (Steps 1--2) | `src/cloudA_step12_onlycloud.py`, `src/cloudB_step12_onlycloud.py`, `src/cloud_step12_beaver_driver.py`, `src/cloudA_step12_socket_client.py`, `src/cloudB_step12_socket_server.py`, `src/run_step12_socket_pair.py` |
+| Secure hyperedge-size and pairwise-intersection pruning (Steps 1--2) | `src/cloudA_step12_onlycloud.py`, `src/cloudB_step12_onlycloud.py`, `src/cloudA_step12_socket_client.py`, `src/cloudB_step12_socket_server.py`, `src/run_step12_socket_pair.py` |
 | Secure vertex confirmation (Step 3) | `src/client_make_alpha.py`, `src/cloudA_step3_dense.py`, `src/cloudB_step3_dense.py`, `src/client_decrypt_step3_dense.py` |
 | Query-token preparation for Step 4 | `src/client_16_make_padded_pairs.py`, `src/client_17_make_query_prf_tokens.py`, `src/client_18_share_query_tokens.py`, `src/client_19_make_step4_preproc.py` |
 | Secure token-level consistency verification (Step 4) | `src/cloudA_step4_socket_client.py`, `src/cloudB_step4_socket_server.py`, `src/run_step4_socket_pair.py`, `src/client_step4_prf_filter.py` |
 | End-to-end query execution | `src/21_run_queryset_pipeline_socket.py`, `src/24_run_dataset_all_eq.py` |
 | Per-query communication accounting | `src/23_collect_query_comm_metrics.py` |
 | Aggregate statistics and paper tables | `src/stat_protocol_summary.py` |
-
-The repository also retains several auxiliary implementations and analysis utilities:
-
-- `src/20_make_queryset.py`: a generic query-set generator;
-- `src/22_export_runner_summary_csv.py`: an earlier standalone result exporter;
-- `src/cloudA_step4_prf_eq_onlypairs.py`, `src/cloudB_step4_prf_eq_onlypairs.py`, and `src/cloudA_step4_finalize.py`: non-socket Step 4 utilities;
-- `src/31_analyze_ambiguity_without_plaintext_output.py`: an additional ambiguity-analysis utility.
 
 The socket-based end-to-end experiments reported in the paper are driven by `src/24_run_dataset_all_eq.py` through `src/21_run_queryset_pipeline_socket.py`.
 
@@ -258,9 +251,7 @@ This repository is intended to support inspection of the implementation and its 
 - dense data and query shares;
 - Beaver multiplication material;
 - PRF token arrays;
-- per-query intermediate arrays and socket transcripts;
-- complete raw execution logs;
-- Python caches and editor-specific files.
+- complete per-query working directories, intermediate arrays, and socket transcripts..
 
 ## 10. Research-use notice
 
