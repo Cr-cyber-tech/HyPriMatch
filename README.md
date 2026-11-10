@@ -1,5 +1,7 @@
 # HyPriMatch
 
+Research artifact accompanying an **ICDE 2027 submission**.
+
 This repository contains the research artifact for **HyPriMatch: Privacy-Preserving Pattern Matching over Hypergraphs**. HyPriMatch supports privacy-preserving subhypergraph matching over outsourced, labeled hypergraph data using two non-colluding cloud servers.
 
 The artifact provides the implementation of the data and query preparation procedures, the four protocol stages described in the paper, the end-to-end experiment drivers, and compact result summaries. The implementation simulates the data owner, query client, and two cloud servers on one machine; the communication between the two clouds is implemented with local sockets.
